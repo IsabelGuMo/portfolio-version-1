@@ -16,12 +16,12 @@ import {
 
 import './style.css';
 
-import headerImage from '../../img/header-image.jpeg';
+import headerImage from '../../img/header-image.png';
 import curriculum from '../../img/curriculum.png'
 import PowerPuffGirls from '../../img/PowerPuffGirls.png'
 import pokeApi from '../../img/pokeApi.png'
 import pokedex from '../../img/pokedex.png'
-import about_me from '../../img/about_me.jpeg'
+import about_me from '../../img/about_me.png'
 
 import { FiMail } from 'react-icons/fi'
 import { FiGithub } from 'react-icons/fi'
@@ -32,23 +32,23 @@ const Home = () => {
 
     const work= [
         {
-            name: "Curriculum",
-            link: '#',
+            name: "Currículum",
+            link: 'https://isabel-gm-cv.vercel.app/',
             imageSrc: curriculum
         },
         {
             name: "PokeApi",
-            link: '#',
+            link: 'https://poke-api-one.vercel.app/',
             imageSrc: pokeApi
         },
         {
             name: "PowerPuffGirls",
-            link: '#',
+            link: 'https://power-puff-girls-vue.vercel.app/',
             imageSrc: PowerPuffGirls
         },
         {
             name: "Pokédex",
-            link: '#',
+            link: 'https://react-pokedex-one.vercel.app/',
             imageSrc: pokedex
         },
     ]
@@ -60,38 +60,39 @@ const handleContactClick = (url) => {
     return(
         
         <ScrollContainer>
+            {/* header */}
             <ScrollPage page={0}>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-                <div className="image-container">
-                    <img src={headerImage} alt="header image" />
-                    <div className="black-background"></div>
-                </div>
+                        <div className="image-container">
+                            <img src={headerImage} alt="I'm" />
+                            <div className="black-background"></div>
+                        </div>
                 </Animator>
-                <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 0))}>
-                    <div className="name">
-                        <h2 className="first">
-                            Isabel
-                        </h2>
-                    </div>
-                </Animator>
-                <Animator animation={batch(Fade(), Sticky(), MoveOut(-1650, 0))}>
-                    <div className="name">
-                        <h2 className="last">
-                            Gutiérrez Moreno
-                        </h2>
-                    </div>
-                </Animator>
-                <Animator animation={batch(Fade(), Sticky(), MoveOut(-100, 100))}>
-                    <div className="position">
-                        <div></div>
-                        <h2 className="last">
-                            Front-End Developer
-                        </h2>
-                    </div>
-                </Animator>
+                    <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 0))}>
+                        <div className="name">
+                            <h2 className="first">
+                                Isabel
+                            </h2>
+                        </div>
+                    </Animator>
+                    <Animator animation={batch(Fade(), Sticky(), MoveOut(-1650, 0))}>
+                        <div className="name">
+                            <h2 className="last">
+                                G.M.
+                            </h2>
+                        </div>
+                    </Animator>
+                    <Animator animation={batch(Fade(), Sticky(), MoveOut(-100, 100))}>
+                        <div className="position">
+                            <div></div>
+                            <h2 className="last">
+                                Front-End Developer
+                            </h2>
+                        </div>
+                    </Animator>
             </ScrollPage>
 
-            {/* section 2 */}
+            {/* portfolio */}
 
             <ScrollPage page={1}>
                 <Animator animation={ZoomInScrollOut}>
@@ -107,12 +108,12 @@ const handleContactClick = (url) => {
                         {
                             work?.map((work, index) => {
                                 return(
-                                    <a href={work?.link} target="_blank" key={work?.name}>
-                                        <div className="position-card">
-                                            <div classname="project-image">
+                                    <a href={work?.link} target="_blank" rel="noopener noreferrer" key={work?.name}>
+                                        <div className="portfolio-card">
+                                            <div className="project-image">
                                                 <img src={work?.imageSrc} alt={work?.name} />
                                             </div>
-                                            <div className="position-title">
+                                            <div className="portfolio-title">
                                                 <h3>
                                                     {work?.name}
                                                 </h3>
@@ -129,7 +130,7 @@ const handleContactClick = (url) => {
                 </Animator>
             </ScrollPage>
 
-         {/* section 3 */}
+         {/* about me */}
             <ScrollPage page={3}>
                 <Animator animation={ZoomInScrollOut}>
                     <div className="section-title about-me">
@@ -140,22 +141,25 @@ const handleContactClick = (url) => {
             <ScrollPage page={4}>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(-1000, -400))}>
                    <div className="background-image-container">
-                       <img src={about_me} alt="my picture" />
+                       <img src={about_me} alt="I'm working" />
                        <div className="black-background"></div>
                    </div> 
                 </Animator>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 500))}>
                     <div className="details">
-                        <h2 className="gretting">Hello</h2>
-                        <p className="bio"> Metus erat varius neque potenti convallis! Dignissim commodo pellentesque euismod, ultricies lorem platea lobortis convallis vulputate eleifend est. Auctor elit rhoncus 
+                        <h2 className="gretting">Junior Full Stack Developer in progress🔋</h2>
+                        <p className="bio"> 
+                        Después de muchos años dedicada al sector dental, no he perdido las ganas de aprender, he descubierto mi pasión, <strong>el desarrollo web</strong> así que he decidido reinventarme. 
                         </p>
-                        <p className="bio"> Metus erat varius neque potenti convallis! Dignissim commodo pellentesque euismod, ultricies lorem platea lobortis convallis vulputate eleifend est. 
+                        <p className="bio"> Mi objetivo es formar parte de un equipo, ayudar a conseguir objetivos y ser un valor añadido para la empresa y por que no, crecer con ella.
+                        </p>
+                        <p className="bio"> <strong>Hard Worker & Social Skills</strong>
                         </p>
                     </div>
                 </Animator>
             </ScrollPage>
 
-            {/* section 4 */}
+            {/* contact */}
             <ScrollPage page={5}>
                 <Animator animation={ZoomInScrollOut}>
                     <div className="section-title contact">
@@ -173,13 +177,30 @@ const handleContactClick = (url) => {
                 }}>
                     <span style={{ fontSize: '40px'}}>
 
-                    {/* gmail link */}
+                    {/* github link */}
                         <Animator animation={MoveIn(1000, 0)}>
                             <div 
                                 style={{ 
                                     display: 'flex',
                                     justifyContent: 'center',
                                     alignItems: 'center',
+                                    cursor: 'pointer',
+                                }}
+                                onClick={() => handleContactClick('https://github.com/IsabelGuMo')}
+                                >
+                                <FiGithub color='white' className='contact-list-icon' />
+                                    <p>GitHub</p>
+                            </div>
+                        </Animator>
+
+                    {/* gmail link */}
+                        <Animator animation={MoveIn(-1000, 0)}>
+                            <div 
+                                style={{ 
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    cursor: 'pointer',
                                 }}
                                 onClick={() => handleContactClick('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox')}
                                 >
@@ -187,11 +208,39 @@ const handleContactClick = (url) => {
                                     <p>Gmail</p>
                             </div>
                         </Animator>
+
+                     {/* linkedin link */}
+                        <Animator animation={MoveIn(0, 1000)}>
+                            <div 
+                                style={{ 
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    cursor: 'pointer',
+                                }}
+                                onClick={() => handleContactClick('https://www.linkedin.com/in/isabel-guti%C3%A9rrez-moreno/')}
+                                >
+                                <TiSocialLinkedin color='white' className='contact-list-icon' />
+                                    <p>LinkedIn</p>
+                            </div>
+                        </Animator>
                     </span>
                 </div>
             </ScrollPage>
+
+            {/* footer */}
+            <ScrollPage page={7}>
+                <Animator animation={batch(Fade(), Sticky())}>
+                    <span className="footer">
+                        Done
+                    </span>
+                    <br />
+                    <span className="footer">
+                        Thank You, For your time.
+                    </span>
+                </Animator>
+            </ScrollPage>
         </ScrollContainer>
-        
     )
 }
 
