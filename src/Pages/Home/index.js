@@ -6,7 +6,6 @@ import {
     batch,
     Fade,
     FadeIn,
-    Move,
     MoveIn,
     MoveOut,
     Sticky,
@@ -202,7 +201,7 @@ const handleContactClick = (url) => {
                                     alignItems: 'center',
                                     cursor: 'pointer',
                                 }}
-                                onClick={() => handleContactClick('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox')}
+                                onClick={() => handleContactClick('https://mail.google.com/mail/u/0/#inbox/FMfcgzGpGBFFRLhZqwLsjmRsWCgqdmJB?compose=new')}
                                 >
                                 <FiMail color='white' className='contact-list-icon' />
                                     <p>Gmail</p>
