@@ -70,7 +70,7 @@ const handleContactClick = (url) => {
                     <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 0))}>
                         <div className="name">
                             <h2 className="first">
-                                Isabel
+                                ISABEL
                             </h2>
                         </div>
                     </Animator>
@@ -150,7 +150,7 @@ const handleContactClick = (url) => {
                         <p className="bio"> 
                         Después de muchos años dedicada al sector dental, no he perdido las ganas de aprender, he descubierto mi pasión, <strong>el desarrollo web</strong> así que he decidido reinventarme. 
                         </p>
-                        <p className="bio"> Mi objetivo es formar parte de un equipo, ayudar a conseguir objetivos y ser un valor añadido para la empresa y por que no, crecer con ella.
+                        <p className="bio"> Mi objetivo es formar parte de un <strong>equipo</strong> , ayudar a conseguir objetivos y ser un valor añadido para la empresa y por que no, crecer con ella.
                         </p>
                         <p className="bio"> <strong>Hard Worker & Social Skills</strong>
                         </p>
@@ -235,7 +235,7 @@ const handleContactClick = (url) => {
                     </span>
                     <br />
                     <span className="footer">
-                        Thank You, For your time.
+                        Thank <strong>You</strong> , For your time.
                     </span>
                 </Animator>
             </ScrollPage>

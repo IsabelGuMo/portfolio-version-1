@@ -1,4 +1,5 @@
-@import url('//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Han+Sans&family=Lalezar&family=Lobster&family=Poller+One&family=Righteous&family=Roboto:wght@300&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Poller+One&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
@@ -10,8 +11,11 @@
 }
 
 body {
-  font-family: 'Druk Wide Bold', sans-serif;
-  background-color: black;
+  font-family: 'Rubik Glitch', cursive;
+  background-image: url('/src/img/asfalt-light.png');
+  background-color: rgb(32, 31, 31);
+  background-position: cover;
+  background-attachment: fixed ;
   color: white;
 }
 
