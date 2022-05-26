@@ -239,7 +239,10 @@ const handleContactClick = (url) => {
                     </span>
                 </Animator>
             </ScrollPage>
-        </ScrollContainer>
+            <p>"Icon made by
+                <a target="_blank" rel="noopener noreferrer" href="https://www.flaticon.com/authors/freepik">Freepik</a>from<a target="_blank" rel="noopener noreferrer" href="http://www.flaticon.com/">www.flaticon.com</a>"
+            </p>
+        </ScrollContainer> 
     )
 }
 
