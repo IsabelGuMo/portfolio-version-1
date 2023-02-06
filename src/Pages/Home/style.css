@@ -22,6 +22,7 @@
 }
 
 .name {
+    font-family: 'StarJedi', serif;
     position: absolute;
     top: 30%;
     left: -60%;
@@ -108,7 +109,7 @@
 }
 
 .portfolio-content {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'StarJedi', serif;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -244,6 +245,7 @@ img {
 }
 
 .gretting {
+    font-family: 'StarJedi', serif;
     font-size: clamp(20px, 1.4vw, 28px);
 }
 
@@ -269,7 +271,7 @@ span > div {
 
 span p {
     cursor: pointier;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'StarJedi', serif;
     font-size: clamp(10px, 3vh, 38px);
     margin-left: 22px;
 }
@@ -279,7 +281,7 @@ span p {
 }
 
 .footer {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'StarJedi', serif;
     font-size: clamp(10px, 3vh, 38px);
 }
 

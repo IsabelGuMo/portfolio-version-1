@@ -21,6 +21,9 @@ import PowerPuffGirls from '../../img/PowerPuffGirls.png'
 import pokeApi from '../../img/pokeApi.png'
 import pokedex from '../../img/pokedex.png'
 import about_me from '../../img/about_me.png'
+import e_commerce from '../../img/e-commerce.png'
+import drum_kit from '../../img/drum.png'
+import tlb from '../../img/tlb.png'
 
 import { FiMail } from 'react-icons/fi'
 import { FiGithub } from 'react-icons/fi'
@@ -50,6 +53,21 @@ const Home = () => {
             link: 'https://react-pokedex-one.vercel.app/',
             imageSrc: pokedex
         },
+        {
+            name: "E-Commerce",
+            link: 'https://e-commerce-shoes-deploy.vercel.app/',
+            imageSrc: e_commerce
+        },
+        {
+            name: "Drum-Kit",
+            link: 'https://women-songs.vercel.app/',
+            imageSrc: drum_kit
+        },
+        {
+            name: "tlb-Soul",
+            link: 'https://codeop-final-project-jade.vercel.app/',
+            imageSrc: tlb
+        },
     ]
 
 const handleContactClick = (url) => {
@@ -70,7 +88,7 @@ const handleContactClick = (url) => {
                     <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 0))}>
                         <div className="name">
                             <h2 className="first">
-                                ISABEL
+                                iSABEL
                             </h2>
                         </div>
                     </Animator>
@@ -96,7 +114,7 @@ const handleContactClick = (url) => {
             <ScrollPage page={1}>
                 <Animator animation={ZoomInScrollOut}>
                     <div className="section-title">
-                        Portfolio
+                        portfolio
                     </div>
                 </Animator>
             </ScrollPage>
@@ -220,7 +238,7 @@ const handleContactClick = (url) => {
                                 onClick={() => handleContactClick('https://www.linkedin.com/in/isabel-guti%C3%A9rrez-moreno/')}
                                 >
                                 <TiSocialLinkedin color='white' className='contact-list-icon' />
-                                    <p>LinkedIn</p>
+                                    <p>Linkedin</p>
                             </div>
                         </Animator>
                     </span>
