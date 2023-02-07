@@ -19,12 +19,15 @@ import headerImage from '../../img/header-image.png';
 import curriculum from '../../img/curriculum.png'
 import nextplis from '../../img/nextplis.png'
 import got from '../../img/got.png'
+import applergic from '../../img/applergic.png'
 import PowerPuffGirls from '../../img/PowerPuffGirls.png'
+import portfolio from '../../img/portfolio.png'
 import pokeApi from '../../img/pokeApi.png'
 import pokedex from '../../img/pokedex.png'
 import about_me from '../../img/about_me.png'
 import e_commerce from '../../img/e-commerce.png'
 import drum_kit from '../../img/drum.png'
+import sakura from '../../img/sakura.png'
 import star_wars from '../../img/starWars.png'
 import tlb from '../../img/tlb.png'
 
@@ -62,9 +65,29 @@ const Home = () => {
             imageSrc: got
         },
         {
+            name: "Applergic",
+            link: 'https://applergicfront1.vercel.app/login',
+            imageSrc: applergic
+        },
+        {
             name: "Power Puff Girls",
             link: 'https://power-puff-girls-vue.vercel.app/',
             imageSrc: PowerPuffGirls
+        },
+        {
+            name: "Portfolio",
+            link: 'https://isabel-portfolio.vercel.app/',
+            imageSrc: portfolio
+        },
+        {
+            name: "StarWars",
+            link: 'https://star-wars-mauve.vercel.app/',
+            imageSrc: star_wars
+        },
+        {
+            name: "tlb-Soul",
+            link: 'https://codeop-final-project-jade.vercel.app/',
+            imageSrc: tlb
         },
         {
             name: "E-Commerce",
@@ -77,15 +100,11 @@ const Home = () => {
             imageSrc: drum_kit
         },
         {
-            name: "StarWars",
-            link: 'https://star-wars-mauve.vercel.app/',
-            imageSrc: star_wars
+            name: "Sakura-Tarot",
+            link: 'https://sakura-tarot.vercel.app/',
+            imageSrc: sakura
         },
-        {
-            name: "tlb-Soul",
-            link: 'https://codeop-final-project-jade.vercel.app/',
-            imageSrc: tlb
-        },
+        
     ]
 
 const handleContactClick = (url) => {
