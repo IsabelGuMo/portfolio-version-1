@@ -17,12 +17,15 @@ import './style.css';
 
 import headerImage from '../../img/header-image.png';
 import curriculum from '../../img/curriculum.png'
+import nextplis from '../../img/nextplis.png'
+import got from '../../img/got.png'
 import PowerPuffGirls from '../../img/PowerPuffGirls.png'
 import pokeApi from '../../img/pokeApi.png'
 import pokedex from '../../img/pokedex.png'
 import about_me from '../../img/about_me.png'
 import e_commerce from '../../img/e-commerce.png'
 import drum_kit from '../../img/drum.png'
+import star_wars from '../../img/starWars.png'
 import tlb from '../../img/tlb.png'
 
 import { FiMail } from 'react-icons/fi'
@@ -39,19 +42,29 @@ const Home = () => {
             imageSrc: curriculum
         },
         {
+            name: "Nextplis",
+            link: 'https://netplis.vercel.app/',
+            imageSrc: nextplis
+        },
+        {
             name: "PokeApi",
             link: 'https://poke-api-one.vercel.app/',
             imageSrc: pokeApi
         },
         {
-            name: "PowerPuffGirls",
-            link: 'https://power-puff-girls-vue.vercel.app/',
-            imageSrc: PowerPuffGirls
-        },
-        {
             name: "Pokédex",
             link: 'https://react-pokedex-one.vercel.app/',
             imageSrc: pokedex
+        },
+        {
+            name: "Game of Thrones",
+            link: 'https://poke-api-one.vercel.app/',
+            imageSrc: got
+        },
+        {
+            name: "Power Puff Girls",
+            link: 'https://power-puff-girls-vue.vercel.app/',
+            imageSrc: PowerPuffGirls
         },
         {
             name: "E-Commerce",
@@ -62,6 +75,11 @@ const Home = () => {
             name: "Drum-Kit",
             link: 'https://women-songs.vercel.app/',
             imageSrc: drum_kit
+        },
+        {
+            name: "StarWars",
+            link: 'https://star-wars-mauve.vercel.app/',
+            imageSrc: star_wars
         },
         {
             name: "tlb-Soul",
